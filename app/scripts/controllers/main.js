@@ -11,6 +11,12 @@
     main.changePriceAndHour = changePriceAndHour.bind(main);
     main.priceDescription = [];
     main.defaultCurrency = 'EUR';
+    main.currencyList = [
+      'EUR',
+      'USD',
+      'GBP',
+      'PLN'
+    ]
     main.total = null;
     main.resourceData = {
       vm:{},

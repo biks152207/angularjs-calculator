@@ -8,10 +8,14 @@ div.row
       div(ng-form name="calculatorForm")
         div.row
           div.col-md-3
+            label Select Currency
+            select.form-control(ng-options="currency for currency in main.currencyList" ng-model="main.defaultCurrency" style="background:#aeaeae" ng-change="main.updatePriceAndHour()")
+        br
+        div.row
+          div.col-md-3
             div.form-group
               label
                 | VM
-              {{main.resourceData.vm.type}}
               select.form-control(ng-model="main.resourceData.vm.type" ng-change="main.updatePriceAndHour()" ng-options="item.type as item.type for item in main.resourceList['vm']")
                 option(value="") Select Option
           div.col-md-3
@@ -158,5 +162,5 @@ div.row
           td
           td
           td Total:
-          td {{main.total | number: 2}}
+          td {{main.total | number: 2}} {{main.defaultCurrency}}
     
