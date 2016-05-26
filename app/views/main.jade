@@ -1,0 +1,162 @@
+div.header
+  h3.text-muted Cloud Calculator
+
+
+div.row
+  div.col-md-8
+    form.horizontal-form(novalidate name="mainForm")
+      div(ng-form name="calculatorForm")
+        div.row
+          div.col-md-3
+            div.form-group
+              label
+                | VM
+              {{main.resourceData.vm.type}}
+              select.form-control(ng-model="main.resourceData.vm.type" ng-change="main.updatePriceAndHour()" ng-options="item.type as item.type for item in main.resourceList['vm']")
+                option(value="") Select Option
+          div.col-md-3
+            div.form-group
+              label
+                | Quantity
+              input.form-control(type="text" name="quantity1" ng-change="main.changePriceAndHour('vm', calculatorForm.quantity1.$invalid)" ng-pattern="/^[0-9]+$/" required min="1"  ng-model="main.resourceData.vm.quantity")
+              span.text-danger(ng-if="calculatorForm.quantity1.$invalid && calculatorForm.quantity1.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Period
+              input.form-control(type="text" name="period1" ng-change="main.changePriceAndHour('vm', calculatorForm.period1.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" hour-filter ng-model="main.resourceData.vm.period")
+              span.text-danger(ng-if="calculatorForm.period1.$invalid && calculatorForm.period1.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Price
+              input.form-control(type="text" ng-model="main.resourceData.vm.price")
+        div.row
+          div.col-md-3
+            div.form-group
+              label
+                | DISK
+              select.form-control(ng-model="main.resourceData.disk.type" ng-change="main.updatePriceAndHour()" ng-options="type.type as type.type for type in main.resourceList['disk']")
+                option(value="") Select Option
+          div.col-md-3
+            div.form-group
+              label
+                | Quantity
+              input.form-control(type="text" name="quantity2" ng-change="main.changePriceAndHour('disk', calculatorForm.quantity2.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" ng-model="main.resourceData.disk.quantity")
+              span.text-danger(ng-if="calculatorForm.quantity2.$invalid && calculatorForm.quantity2.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Period
+              input.form-control(type="text" name="period2" ng-change="main.changePriceAndHour('disk', calculatorForm.period2.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" hour-filter ng-model="main.resourceData.disk.period")
+              span.text-danger(ng-if="calculatorForm.period2.$invalid && calculatorForm.period2.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Price
+              input.form-control(type="text" ng-model="main.resourceData.disk.price")
+        div.row
+          div.col-md-3
+            div.form-group
+              label
+                | NETWORK
+              select.form-control(ng-model="main.resourceData.network.type" ng-change="main.updatePriceAndHour()" ng-options="type.type as type.type for type in main.resourceList['network']")
+                option(value="") Select Option
+          div.col-md-3
+            div.form-group
+              label
+                | Quantity
+              input.form-control(type="text" name="quantity3" ng-change="main.changePriceAndHour('network', calculatorForm.quantity3.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" ng-model="main.resourceData.network.quantity")
+              span.text-danger(ng-if="calculatorForm.quantity3.$invalid && calculatorForm.quantity3.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Period
+              input.form-control(type="text" ng-change="main.changePriceAndHour('network', calculatorForm.period3.$invalid)" name="period3" ng-pattern="/^[0-9]+$/" required min="1" ng-model="main.resourceData.network.period")
+              span.text-danger(ng-if="calculatorForm.period3.$invalid && calculatorForm.period3.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Price
+              input.form-control(type="text" ng-model="main.resourceData.network.price")
+        div.row
+          div.col-md-3
+            div.form-group
+              label
+                | NETADP
+              select.form-control(ng-model="main.resourceData.netadp.type" ng-change="main.updatePriceAndHour()"  ng-options="type.type as type.type for type in main.resourceList['netadp']")
+                option(value="") Select Option
+          div.col-md-3
+            div.form-group
+              label
+                | Quantity
+              input.form-control(type="text" name="quantity4" ng-change="main.changePriceAndHour('netadp', calculatorForm.quantity4.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" ng-model="main.resourceData.netadp.quantity")
+              span.text-danger(ng-if="calculatorForm.quantity4.$invalid && calculatorForm.quantity4.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Period
+              input.form-control(type="text" ng-change="main.changePriceAndHour('netadp', calculatorForm.period4.$invalid)" name="period4" ng-pattern="/^[0-9]+$/" required min="1" ng-model="main.resourceData.netadp.period")
+              span.text-danger(ng-if="calculatorForm.period4.$invalid && calculatorForm.period4.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Price
+              input.form-control(type="text" ng-model="main.resourceData.netadp.price")
+        div.row
+          div.col-md-3
+            div.form-group
+              label
+                | IMAGE
+              select.form-control(ng-model="main.resourceData.image.type" ng-change="main.updatePriceAndHour()" ng-options="type.type as type.type for type in main.resourceList['image']")
+                option(value="") Select Option
+          div.col-md-3
+            div.form-group
+              label
+                | Quantity
+              input.form-control(type="text" name="quantity5" ng-change="main.changePriceAndHour('image', calculatorForm.quantity5.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" ng-model="main.resourceData.image.quantity")
+              span.text-danger(ng-if="calculatorForm.quantity5.$invalid && calculatorForm.quantity5.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Period
+              input.form-control(type="text" ng-change="main.changePriceAndHour('image', calculatorForm.period5.$invalid)" name="period5" ng-pattern="/^[0-9]+$/" required min="1" ng-model="main.resourceData.image.period")
+              span.text-danger(ng-if="calculatorForm.period5.$invalid && calculatorForm.period5.$dirty")
+                | Invalid
+          div.col-md-3
+            div.form-group
+              label
+                | Price
+              input.form-control(type="text" ng-model="main.resourceData.image.price")
+      
+        
+  div.col-md-4.well
+    h4.text-center Calculation
+    table.table
+      thead
+        tr
+          th Resource
+          th Period
+          th Quantity
+          th Cost
+      tbody
+        tr(ng-repeat="list in main.priceDescription")
+          td {{list.resource}}
+          td {{list.period}}
+          td {{list.quantity}}
+          td {{list.price}}
+        tr(ng-if="main.total")
+          td
+          td
+          td Total:
+          td {{main.total | number: 2}}
+    

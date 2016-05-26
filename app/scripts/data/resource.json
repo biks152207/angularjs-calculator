@@ -1,0 +1,1143 @@
+{
+  "service": [
+    {
+      "_id": "563b8298f8b7ed6aca58a388",
+      "data": {
+        "vm": {
+          "memory": 1,
+          "cpu": 1
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 10
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "m1.tiny, vcpu: 1, ram: 1, hissd: 10",
+      "type": "m1.tiny",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.294Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.294Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0099,
+          "USD": 0.0109,
+          "GBP": 0.007,
+          "PLN": 0.0414
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a388"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a38d",
+      "data": {
+        "vm": {
+          "memory": 2,
+          "cpu": 1
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 20
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "m1.small, vcpu: 1, ram: 2, hissd: 20",
+      "type": "m1.small",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.295Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.295Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0197,
+          "USD": 0.0217,
+          "GBP": 0.014,
+          "PLN": 0.0826
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a38d"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a392",
+      "data": {
+        "vm": {
+          "memory": 4,
+          "cpu": 2
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 40
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "m1.medium, vcpu: 2, ram: 4, hissd: 40",
+      "type": "m1.medium",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.296Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.296Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0394,
+          "USD": 0.0435,
+          "GBP": 0.028,
+          "PLN": 0.1653
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a392"
+    },
+    {
+      "_id": "56ea7dc59ce9da3f72e30fcc",
+      "resource": "vm",
+      "type": "image-base",
+      "name": "image-base, vcpu: 1, ram: 1, hissd: 2",
+      "data": {
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ],
+        "disk": [
+          {
+            "size": 2,
+            "type": "hissd",
+            "service": "562fb685a3e575771b599092"
+          }
+        ],
+        "vm": {
+          "cpu": 1,
+          "memory": 1
+        }
+      },
+      "__v": 0,
+      "accessRights": [
+        "52cc1dbdcea0ad170b000021",
+        "53020ae4c5f61a517500000a",
+        "5477755f5f4fa58130cc725d",
+        "000000000000000000000000"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.299Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.299Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "PLN": 0.0414,
+          "GBP": 0.007,
+          "USD": 0.0109,
+          "EUR": 0.0099
+        }
+      },
+      "id": "56ea7dc59ce9da3f72e30fcc"
+    },
+    {
+      "_id": "562fb685a3e575771b59908f",
+      "name": "disk type: Archive",
+      "type": "archive",
+      "resource": "disk",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.300Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.299Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.00005,
+          "USD": 0.00005,
+          "GBP": 0.00003,
+          "PLN": 0.0002
+        }
+      },
+      "id": "562fb685a3e575771b59908f"
+    },
+    {
+      "_id": "562fb685a3e575771b599090",
+      "name": "disk type: Volume",
+      "type": "volume",
+      "resource": "disk",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.300Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.300Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0001,
+          "USD": 0.00011,
+          "GBP": 0.00007,
+          "PLN": 0.0004
+        }
+      },
+      "id": "562fb685a3e575771b599090"
+    },
+    {
+      "_id": "562fb685a3e575771b599091",
+      "name": "disk type: SSD",
+      "type": "ssd",
+      "resource": "disk",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.300Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.300Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.00017,
+          "USD": 0.00018,
+          "GBP": 0.00012,
+          "PLN": 0.0007
+        }
+      },
+      "id": "562fb685a3e575771b599091"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a397",
+      "data": {
+        "vm": {
+          "memory": 7,
+          "cpu": 4
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 60
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "m1.large, vcpu: 4, ram: 7, hissd: 60",
+      "type": "m1.large",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.301Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.301Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0787,
+          "USD": 0.087,
+          "GBP": 0.056,
+          "PLN": 0.3306
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a397"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a39c",
+      "data": {
+        "vm": {
+          "memory": 15,
+          "cpu": 8
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 120
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "m1.xlarge, vcpu: 8, ram: 15, hissd: 120",
+      "type": "m1.xlarge",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.301Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.301Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.1574,
+          "USD": 0.174,
+          "GBP": 0.1121,
+          "PLN": 0.6611
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a39c"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3a1",
+      "data": {
+        "vm": {
+          "memory": 30,
+          "cpu": 16
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 240
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "m1.xxlarge, vcpu: 16, ram: 30, hissd: 240",
+      "type": "m1.xxlarge",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.302Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.302Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.3148,
+          "USD": 0.3479,
+          "GBP": 0.2241,
+          "PLN": 1.3222
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3a1"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3a6",
+      "data": {
+        "vm": {
+          "memory": 15,
+          "cpu": 2
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 45
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "r3.light, vcpu: 2, ram: 15, hissd: 45",
+      "type": "r3.light",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.302Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.302Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0966,
+          "USD": 0.1067,
+          "GBP": 0.0687,
+          "PLN": 0.4056
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3a6"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3ab",
+      "data": {
+        "vm": {
+          "memory": 30,
+          "cpu": 4
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 90
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "r3.small, vcpu: 4, ram: 30, hissd: 90",
+      "type": "r3.small",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.303Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.303Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.1931,
+          "USD": 0.2135,
+          "GBP": 0.1375,
+          "PLN": 0.8112
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3ab"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3b0",
+      "data": {
+        "vm": {
+          "memory": 60,
+          "cpu": 8
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 180
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "r3.medium, vcpu: 8, ram: 60, hissd: 180",
+      "type": "r3.medium",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.303Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.303Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.3863,
+          "USD": 0.4269,
+          "GBP": 0.275,
+          "PLN": 1.6223
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3b0"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3b5",
+      "data": {
+        "vm": {
+          "memory": 120,
+          "cpu": 16
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 360
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "r3.large, vcpu: 16, ram: 120, hissd: 360",
+      "type": "r3.large",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.303Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.303Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.7725,
+          "USD": 0.8538,
+          "GBP": 0.5499,
+          "PLN": 3.2445
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3b5"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3ba",
+      "data": {
+        "vm": {
+          "memory": 250,
+          "cpu": 32
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 720
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "r3.xlarge, vcpu: 32, ram: 250, hissd: 720",
+      "type": "r3.xlarge",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.304Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.304Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 1.545,
+          "USD": 1.7076,
+          "GBP": 1.0998,
+          "PLN": 6.4889
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3ba"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3bf",
+      "data": {
+        "vm": {
+          "memory": 4,
+          "cpu": 4
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 30
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "c2.light, vcpu: 4, ram: 4, hissd: 30",
+      "type": "c2.light",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.304Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.304Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0456,
+          "USD": 0.0504,
+          "GBP": 0.0325,
+          "PLN": 0.1916
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3bf"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3c4",
+      "data": {
+        "vm": {
+          "memory": 7,
+          "cpu": 8
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 50
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "c2.small, vcpu: 8, ram: 7, hissd: 50",
+      "type": "c2.small",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.305Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.305Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0799,
+          "USD": 0.0883,
+          "GBP": 0.0568,
+          "PLN": 0.3354
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3c4"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3c9",
+      "data": {
+        "vm": {
+          "memory": 15,
+          "cpu": 12
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 110
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "c2.medium, vcpu: 12, ram: 15, hissd: 110",
+      "type": "c2.medium",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.305Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.305Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.1696,
+          "USD": 0.1875,
+          "GBP": 0.1208,
+          "PLN": 0.7125
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3c9"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3ce",
+      "data": {
+        "vm": {
+          "memory": 30,
+          "cpu": 16
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 230
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "c2.large, vcpu: 16, ram: 30, hissd: 230",
+      "type": "c2.large",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.306Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.306Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.3393,
+          "USD": 0.375,
+          "GBP": 0.2415,
+          "PLN": 1.425
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3ce"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3d3",
+      "data": {
+        "vm": {
+          "memory": 60,
+          "cpu": 24
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 450
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "c2.xlarge, vcpu: 24, ram: 60, hissd: 450",
+      "type": "c2.xlarge",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.306Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.306Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.6786,
+          "USD": 0.75,
+          "GBP": 0.4831,
+          "PLN": 2.85
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3d3"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3d8",
+      "data": {
+        "vm": {
+          "memory": 30,
+          "cpu": 6
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 240
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "i1.small, vcpu: 6, ram: 30, hissd: 240",
+      "type": "i1.small",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.307Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.307Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.2279,
+          "USD": 0.2518,
+          "GBP": 0.1622,
+          "PLN": 0.957
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3d8"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3dd",
+      "data": {
+        "vm": {
+          "memory": 60,
+          "cpu": 8
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 480
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "i1.medium, vcpu: 8, ram: 60, hissd: 480",
+      "type": "i1.medium",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.307Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.307Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.3852,
+          "USD": 0.4258,
+          "GBP": 0.2742,
+          "PLN": 1.618
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3dd"
+    },
+    {
+      "_id": "570a407c9ce9da3f72e30fcf",
+      "resource": "vm",
+      "type": "network-gw",
+      "name": "network gateway, vcpu: 1, ram: 1, hissd: 2",
+      "data": {
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          },
+          {
+            "service": "570a3f8f9ce9da3f72e30fce",
+            "type": "private"
+          }
+        ],
+        "disk": [
+          {
+            "size": 2,
+            "type": "hissd"
+          }
+        ],
+        "vm": {
+          "cpu": 1,
+          "memory": 1
+        }
+      },
+      "__v": 0,
+      "accessRights": [
+        "52cc1dbdcea0ad170b000021",
+        "53020ae4c5f61a517500000a",
+        "5477755f5f4fa58130cc725d",
+        "000000000000000000000000"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.308Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.308Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "PLN": 0,
+          "GBP": 0,
+          "USD": 0,
+          "EUR": 0
+        }
+      },
+      "id": "570a407c9ce9da3f72e30fcf"
+    },
+    {
+      "_id": "562fb685a3e575771b599092",
+      "name": "disk type: hiSSD",
+      "type": "hissd",
+      "resource": "disk",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.308Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.308Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.00036,
+          "USD": 0.00039,
+          "GBP": 0.00025,
+          "PLN": 0.0015
+        }
+      },
+      "id": "562fb685a3e575771b599092"
+    },
+    {
+      "_id": "570b73ab9ce9da3f72e30fd0",
+      "resource": "network",
+      "type": "private",
+      "name": "private network",
+      "__v": 0,
+      "accessRights": [
+        "52cc1dbdcea0ad170b000021",
+        "53020ae4c5f61a517500000a",
+        "5477755f5f4fa58130cc725d",
+        "000000000000000000000000",
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.309Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.308Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "PLN": 0.0826,
+          "GBP": 0,
+          "USD": 0,
+          "EUR": 0
+        }
+      },
+      "id": "570b73ab9ce9da3f72e30fd0"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3e2",
+      "data": {
+        "vm": {
+          "memory": 90,
+          "cpu": 12
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 720
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "i1.large, vcpu: 12, ram: 90, hissd: 720",
+      "type": "i1.large",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.309Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.309Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.5636,
+          "USD": 0.6229,
+          "GBP": 0.4012,
+          "PLN": 2.367
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3e2"
+    },
+    {
+      "_id": "563b8298f8b7ed6aca58a3e7",
+      "data": {
+        "vm": {
+          "memory": 120,
+          "cpu": 26
+        },
+        "disk": [
+          {
+            "service": "562fb685a3e575771b599092",
+            "size": 960
+          }
+        ],
+        "netadp": [
+          {
+            "service": "561e7e30a8cfd461e469ad18"
+          }
+        ]
+      },
+      "name": "i1.xlarge, vcpu: 26, ram: 120, hissd: 960",
+      "type": "i1.xlarge",
+      "resource": "vm",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.309Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.309Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.734,
+          "USD": 0.8113,
+          "GBP": 0.5225,
+          "PLN": 3.083
+        }
+      },
+      "id": "563b8298f8b7ed6aca58a3e7"
+    },
+    {
+      "_id": "561e7e30a8cfd461e469ad18",
+      "type": "public",
+      "resource": "netadp",
+      "data": {
+        "speed": 100
+      },
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.310Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.310Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "PLN": 0,
+          "EUR": 0
+        }
+      },
+      "id": "561e7e30a8cfd461e469ad18"
+    },
+    {
+      "_id": "570a3f8f9ce9da3f72e30fce",
+      "data": {
+        "speed": 1000
+      },
+      "resource": "netadp",
+      "type": "private",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.310Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.310Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "PLN": 0,
+          "EUR": 0
+        }
+      },
+      "id": "570a3f8f9ce9da3f72e30fce"
+    },
+    {
+      "_id": "564639bc052c084e2f2e3266",
+      "name": "image standard",
+      "type": "standard",
+      "resource": "image",
+      "__v": 0,
+      "accessRights": [
+        "*"
+      ],
+      "modifiedBy": "",
+      "modifiedOn": "2016-05-25T09:21:38.311Z",
+      "createdBy": "",
+      "createdOn": "2016-05-25T09:21:38.311Z",
+      "billing": {
+        "period": "1h",
+        "quantity": 1,
+        "price": {
+          "EUR": 0.0001,
+          "USD": 0.00011,
+          "GBP": 0.00007,
+          "PLN": 0.0004
+        }
+      },
+      "id": "564639bc052c084e2f2e3266"
+    }
+  ]
+}
