@@ -1,0 +1,33 @@
+form(novalidate="" name="emailForm" ng-submit="vm.submit(emailForm.$valid,emailForm)" id="emailForm")
+  div.col-md-offset-2.col-md-8
+    legend Email Form
+    div.row(ng-if="vm.message")
+      div.panel.panel-success
+        div.panel-body
+          {{vm.message}}
+    div.row
+      div.col-md-6
+        div.form-group(ng-class="{'has-error':emailForm.email.$invalid && emailForm.email.$dirty }")
+          input.form-control(type="email"  ng-model="vm.formData.email" name="email" placeholder="Email"  required)
+          span.text-danger(ng-if="emailForm.email.$invalid && (emailForm.email.$dirty || emailForm.$submitted)")
+            p(ng-if="emailForm.email.$error.required")
+              | Please enter your email
+            p(ng-if="emailForm.email.$error.email")
+              | Invalid email
+      div.col-md-6
+        div.form-group(ng-class="{'has-error':emailForm.subject.$invalid && emailForm.subject.$dirty }")
+          input.form-control(type="text" ng-model="vm.formData.subject" name="subject" placeholder="Subject" required)
+          span.text-danger(ng-if="emailForm.subject.$invalid && (emailForm.subject.$dirty || emailForm.$submitted)")
+            p(ng-if="emailForm.subject.$error.required")
+              | Please enter your subject
+    div.row
+      div.col-md-12
+        div.form-group(ng-class="{'has-error':emailForm.body.$invalid && emailForm.body.$dirty }")
+          textarea.form-control(rows="4" name="body" ng-model="vm.formData.body" required)
+          span.text-danger(ng-if="emailForm.body.$invalid && (emailForm.body.$dirty || emailForm.$submitted)")
+            p(ng-if="emailForm.body.$error.required")
+              | Please enter your text
+    div.row
+      div.col-md-12
+        button.btn.btn-primary(type="submit")
+          | Submit

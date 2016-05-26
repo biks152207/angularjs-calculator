@@ -19,7 +19,14 @@
         templateUrl: 'views/main.html',
         controller: 'mainCtrl',
         controllerAs: 'main'
-      });
+      })
+    $stateProvider
+      .state('email',{
+        url: '/email',
+        templateUrl: 'views/email.html',
+        controller: 'emailCtrl',
+        controllerAs: 'vm'
+      })
   }
 
 })();
