@@ -29,14 +29,14 @@ div.row
             div.form-group
               label
                 | Period
-              input.form-control(type="text" name="period1" ng-change="main.changePriceAndHour('vm', calculatorForm.period1.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" hour-filter ng-model="main.resourceData.vm.period")
+              input.form-control(type="text" name="period1"  ng-change="main.changePriceAndHour('vm', calculatorForm.period1.$invalid)" ng-pattern="/^[0-9]+$/" required min="1" hour-filter ng-model="main.resourceData.vm.period")
               span.text-danger(ng-if="calculatorForm.period1.$invalid && calculatorForm.period1.$dirty")
                 | Invalid
           div.col-md-3
             div.form-group
               label
                 | Price
-              input.form-control(type="text" ng-model="main.resourceData.vm.price")
+              input.form-control(type="text" ng-disabled="true" ng-model="main.resourceData.vm.price")
         div.row
           div.col-md-3
             div.form-group
@@ -62,7 +62,7 @@ div.row
             div.form-group
               label
                 | Price
-              input.form-control(type="text" ng-model="main.resourceData.disk.price")
+              input.form-control(type="text" ng-disabled="true" ng-model="main.resourceData.disk.price")
         div.row
           div.col-md-3
             div.form-group
@@ -88,7 +88,7 @@ div.row
             div.form-group
               label
                 | Price
-              input.form-control(type="text" ng-model="main.resourceData.network.price")
+              input.form-control(type="text" ng-disabled="true" ng-model="main.resourceData.network.price")
         div.row
           div.col-md-3
             div.form-group
@@ -114,7 +114,7 @@ div.row
             div.form-group
               label
                 | Price
-              input.form-control(type="text" ng-model="main.resourceData.netadp.price")
+              input.form-control(type="text" ng-disabled="true" ng-model="main.resourceData.netadp.price")
         div.row
           div.col-md-3
             div.form-group
@@ -140,7 +140,7 @@ div.row
             div.form-group
               label
                 | Price
-              input.form-control(type="text" ng-model="main.resourceData.image.price")
+              input.form-control(type="text" ng-disabled="true" ng-model="main.resourceData.image.price")
       
         
   div.col-md-4.well
